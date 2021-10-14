@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maps",
+  "info": {
+    "name": "Map",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "long": {
+      "type": "float"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "article": {
+      "model": "article",
+      "via": "map"
+    }
+  }
+}
